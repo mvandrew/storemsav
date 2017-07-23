@@ -13,6 +13,16 @@ There are several layout & color options to personalise your shop, multiple widg
 
 Parent WordPress theme based on [Underscores](http://underscores.me/).
 
+## Key Features
+* Added Cyrillic Languages support for the Source Sans Pro font.
+* Store MSAV theme properties allow you to set the keys to include the code:
+  * [Google Analytics](https://analytics.google.com/);
+  * [Google Webmasters](https://www.google.com/webmasters/);
+  * [Yandex Metrika](https://metrika.yandex.ru/);
+  * [Yandex Webmaster](https://webmaster.yandex.ru/);
+  * [TOP Mail.ru](https://top.mail.ru/);
+  * [Facebook Pixel](https://business.facebook.com/pixels/).
+
 ## Storefront theme resources
 * Storefront theme [Documentation](https://docs.woocommerce.com/documentation/themes/storefront/).
 * Official parent theme [GitHub repository](https://github.com/woocommerce/storefront).
