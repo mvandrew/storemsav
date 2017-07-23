@@ -16,3 +16,8 @@ Parent WordPress theme based on [Underscores](http://underscores.me/).
 ## Storefront theme resources
 * Storefront theme [Documentation](https://docs.woocommerce.com/documentation/themes/storefront/).
 * Official parent theme [GitHub repository](https://github.com/woocommerce/storefront).
+
+## Frameworks
+* Grid-layout based on [Susy engine](http://oddbird.net/susy/) for Sass. [Susy3 Documentation](http://oddbird.net/susy/docs/). [Susy1/Susy2 Documentation](http://susy.readthedocs.io/). In my opinion, the documentation for version 2 is much better.
+* CSS Framework based on [Compass](http://compass-style.org/).
+* Used a simple and lightweight mixin library [Bourbon](http://bourbon.io/) for Sass. See Bourbon [Documentation](http://bourbon.io/docs/).
