@@ -1,2 +1,8 @@
+# PhpStorm
+.idea
+
+# macOS
+.DS_Store
+
 *.log
 .sass-cache
