@@ -10,6 +10,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+
+// ------------------------------------------
+// Define the Store MSAV version.
+// ------------------------------------------
+$storemsav_theme                            = wp_get_theme( 'storemsav' );
+define( '_STM_VERSION',                     $storemsav_theme['Version'] );
+
+
 // ------------------------------------------
 // Determining theme folders.
 // ------------------------------------------
@@ -28,6 +36,7 @@ define( '_STM_TEMPLATE_ELEMENTS_DIR',       _STM_CHILD_DIR . '/template-elements
 // ------------------------------------------
 define( '_STM_PARENT_URI',                  get_template_directory_uri() );
 define( '_STM_CHILD_URI',                   get_stylesheet_directory_uri() );
+define( '_STM_STYLESHEETS',                 _STM_CHILD_URI . '/stylesheets' );
 
 
 // ------------------------------------------

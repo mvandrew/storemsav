@@ -9,3 +9,12 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+
+/**
+ * Template System Hooks
+ *
+ * @see storemsav_enqueue_scripts()
+ */
+add_action( 'wp_enqueue_scripts',               'storemsav_enqueue_scripts',        40);
+add_action( 'after_setup_theme',                'storemsav_setup' );
