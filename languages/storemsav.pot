@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: StoreMSAV\n"
-"POT-Creation-Date: 2017-07-25 11:06+0300\n"
+"POT-Creation-Date: 2017-07-25 17:50+0300\n"
 "PO-Revision-Date: 2017-07-25 11:06+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,8 +15,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -65,43 +65,68 @@ msgid "Hide post author"
 msgstr ""
 
 #: inc/customizer.php:68
+msgid "Hide post date"
+msgstr ""
+
+#: inc/customizer.php:82
 msgid "Hide powered link"
 msgstr ""
 
-#: inc/customizer.php:80
+#: inc/customizer.php:94
 msgid "Design Site Link"
 msgstr ""
 
-#: inc/customizer.php:93
+#: inc/customizer.php:107
 msgid "Show design site link"
 msgstr ""
 
-#: inc/customizer.php:106
+#: inc/customizer.php:120
 msgid "Design site link text"
 msgstr ""
 
-#: inc/customizer.php:119
+#: inc/customizer.php:133
 msgid "Design site link URL"
 msgstr ""
 
-#: inc/customizer.php:132
+#: inc/customizer.php:146
 msgid "Design site link alias"
 msgstr ""
 
-#: inc/customizer.php:144
+#: inc/customizer.php:158
 msgid "Copyright Info"
 msgstr ""
 
-#: inc/customizer.php:157
+#: inc/customizer.php:171
 msgid "Show Copyright Info"
 msgstr ""
 
-#: inc/customizer.php:170
+#: inc/customizer.php:184
 msgid "Copyright Owner"
 msgstr ""
 
-#: inc/customizer.php:183
+#: inc/customizer.php:197
 msgid "First Copyright Year"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:51
+#, php-format
+msgid "&copy; %1$s &mdash; <a href=\"%2$s\">%3$s</a>, All Rights Reserved."
+msgstr ""
+
+#: inc/storemsav-template-functions.php:57
+#, php-format
+msgid ""
+"&copy; %1$s-%2$s &mdash; <a href=\"%3$s\">%4$s</a>, All Rights Reserved."
+msgstr ""
+
+#: inc/storemsav-template-functions.php:78
+#, php-format
+msgid "%1$s modified by %2$s."
+msgstr ""
+
+#. Author of the plugin/theme
+#: inc/storemsav-template-functions.php:82
+msgid "Andrey Mishchenko"
 msgstr ""
 
 #. Theme Name of the plugin/theme
@@ -118,10 +143,6 @@ msgid ""
 "site. Store MSAV WordPress theme contains some additional features to "
 "simplify the addition of analytical systems, such as Google Analytics, "
 "Yandex Metrika, Facebook-pixel, Mail.ru counter and others."
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "Andrey Mishchenko"
 msgstr ""
 
 #. Author URI of the plugin/theme

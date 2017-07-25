@@ -1,10 +1,12 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) { exit; }
 /**
  * The header for our theme.
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package storefront
+ * @since       2.2.4.1
+ * @package     storemsav
  */
 
 ?><!doctype html>

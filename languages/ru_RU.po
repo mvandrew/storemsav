@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: StoreMSAV\n"
-"POT-Creation-Date: 2017-07-25 11:07+0300\n"
-"PO-Revision-Date: 2017-07-25 11:16+0300\n"
+"POT-Creation-Date: 2017-07-25 17:50+0300\n"
+"PO-Revision-Date: 2017-07-25 17:52+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -16,8 +16,8 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -66,44 +66,70 @@ msgid "Hide post author"
 msgstr "Скрыть автора поста"
 
 #: inc/customizer.php:68
+msgid "Hide post date"
+msgstr "Скрыть дату публикации"
+
+#: inc/customizer.php:82
 msgid "Hide powered link"
 msgstr "Скрыть ссылку на WordPress"
 
-#: inc/customizer.php:80
+#: inc/customizer.php:94
 msgid "Design Site Link"
 msgstr "Разработчик сайта"
 
-#: inc/customizer.php:93
+#: inc/customizer.php:107
 msgid "Show design site link"
 msgstr "Показывать ссылку разработчика"
 
-#: inc/customizer.php:106
+#: inc/customizer.php:120
 msgid "Design site link text"
 msgstr "Текст ссылки разработчика"
 
-#: inc/customizer.php:119
+#: inc/customizer.php:133
 msgid "Design site link URL"
 msgstr "Ссылка на разработчика"
 
-#: inc/customizer.php:132
+#: inc/customizer.php:146
 msgid "Design site link alias"
 msgstr "Текст отображения ссылки"
 
-#: inc/customizer.php:144
+#: inc/customizer.php:158
 msgid "Copyright Info"
 msgstr "Авторские права"
 
-#: inc/customizer.php:157
+#: inc/customizer.php:171
 msgid "Show Copyright Info"
 msgstr "Показывать авторские права"
 
-#: inc/customizer.php:170
+#: inc/customizer.php:184
 msgid "Copyright Owner"
 msgstr "Владелец авторских прав"
 
-#: inc/customizer.php:183
+#: inc/customizer.php:197
 msgid "First Copyright Year"
 msgstr "Первый год возникновения прав"
+
+#: inc/storemsav-template-functions.php:51
+#, php-format
+msgid "&copy; %1$s &mdash; <a href=\"%2$s\">%3$s</a>, All Rights Reserved."
+msgstr "&copy; %1$s &mdash; <a href=\"%2$s\">%3$s</a>, Все права защищены."
+
+#: inc/storemsav-template-functions.php:57
+#, php-format
+msgid ""
+"&copy; %1$s-%2$s &mdash; <a href=\"%3$s\">%4$s</a>, All Rights Reserved."
+msgstr ""
+"&copy; %1$s-%2$s &mdash; <a href=\"%3$s\">%4$s</a>, Все права защищены."
+
+#: inc/storemsav-template-functions.php:78
+#, php-format
+msgid "%1$s modified by %2$s."
+msgstr "Тему %1$s доработал %2$s."
+
+#. Author of the plugin/theme
+#: inc/storemsav-template-functions.php:82
+msgid "Andrey Mishchenko"
+msgstr "Андрей Мищенко"
 
 #. Theme Name of the plugin/theme
 msgid "StoreMSAV"
@@ -120,15 +146,11 @@ msgid ""
 "simplify the addition of analytical systems, such as Google Analytics, "
 "Yandex Metrika, Facebook-pixel, Mail.ru counter and others."
 msgstr ""
-"Store MSAV - дочерняя тема Storefront. Хорошо подходит для создания "
-"Интернет магазинов. Содержит дополнительные функции упрощающие запуск новых "
-"Интернет Магазинов. Позволяет добавлять счётчики Google Analytics, Яндекс "
-"Метрика, Пиксель Facebook, Счетчик Mail.ru без дополнительных плагинов и "
+"Store MSAV - дочерняя тема Storefront. Хорошо подходит для создания Интернет "
+"магазинов. Содержит дополнительные функции упрощающие запуск новых Интернет "
+"Магазинов. Позволяет добавлять счётчики Google Analytics, Яндекс Метрика, "
+"Пиксель Facebook, Счетчик Mail.ru без дополнительных плагинов и "
 "необходимости вмешиваться в код шаблонов."
-
-#. Author of the plugin/theme
-msgid "Andrey Mishchenko"
-msgstr "Андрей Мищенко"
 
 #. Author URI of the plugin/theme
 msgid "http://www.msav.ru/"

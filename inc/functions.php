@@ -23,7 +23,7 @@ if ( !function_exists('storemsav_enqueue_scripts') ) {
 		 */
 		wp_enqueue_style(
 			'storemsav-style',
-			_STM_STYLESHEETS . '/style.min.css',
+			_STM_STYLESHEETS . '/style.css',
 			array('storefront-style'),
 			_STM_VERSION
 		);

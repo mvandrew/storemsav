@@ -56,6 +56,20 @@ if ( !function_exists('storemsav_customize_register') ) {
 			'settings'              => $name
 		));
 
+		// Hide post date
+		$name = 'storemsav_hide_post_date';
+		$wp_customize->add_setting( $name, array(
+			'default'               => 0,
+			'capability'            => 'edit_theme_options',
+			'sanitize_callback'     => 'storemsav_checkbox_sanitize'
+		));
+		$wp_customize->add_control( $name, array(
+			'type'                  => 'checkbox',
+			'label'                 => __('Hide post date', 'storemsav'),
+			'section'               => $section,
+			'settings'              => $name
+		));
+
 		// Hide powered link
 		$name = 'storemsav_hide_powered_link';
 		$wp_customize->add_setting( $name, array(
@@ -72,7 +86,7 @@ if ( !function_exists('storemsav_customize_register') ) {
 
 
 		//
-		// Design Site Link
+		// Designed Site Link
 		//
 		$section = 'storemsav_design_site_settings';
 		$wp_customize->add_section( $section, array(

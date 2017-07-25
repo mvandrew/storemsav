@@ -1,5 +1,22 @@
 // Screen
 // ======
 
-@import "grids";
 @import 'bourbon/bourbon';
+
+// Vendors
+// External libraries and frameworks.
+@import "theme/vendors/modular-scale";
+
+// Utilities
+// Sass tools and helpers used across the project.
+@import "theme/utils/variables";
+@import "theme/utils/mixins";
+
+// Base
+// Includes all the main Store MSAV css.
+@import "theme/base/layout";
+
+// Elements
+// Includes on page elements and sections
+@import "theme/elements/header";
+@import "theme/elements/footer";
