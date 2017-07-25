@@ -28,4 +28,5 @@ add_action( 'customize_register',               'storemsav_customize_register' )
  *
  * @see storemsav_head()
  */
-add_action( 'wp_head',                          'storemsav_head' );
+add_action( 'wp_head',                          'storemsav_head',                   10 );
+add_action( 'wp_head',                          'storemsav_remove_parent_hooks',    20 );

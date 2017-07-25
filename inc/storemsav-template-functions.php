@@ -178,3 +178,113 @@ if ( ! function_exists( 'storemsav_site_title_or_logo' ) ) {
 		// storemsav_site_title_or_logo
 	}
 }
+
+
+if ( !function_exists('storemsav_single_post_posted_on_html') ) {
+	/**
+   * Filtered posted date string
+   *
+	 * @param       $output string
+	 *
+	 * @return      string
+   *
+   * @since       2.2.4.1
+	 */
+  function storemsav_single_post_posted_on_html( $output ) {
+
+    if ( StoreMsav::get_instance()->hide_post_date ) {
+      $output = '';
+    }
+
+    return $output;
+
+    // storemsav_single_post_posted_on_html
+  }
+}
+
+
+if ( !function_exists('storemsav_the_author_posts_link') ) {
+	/**
+   * Filtered post author link
+   *
+	 * @param $output string
+	 *
+	 * @return string
+	 */
+  function storemsav_the_author_posts_link( $output ) {
+
+    return $output;
+
+    // storemsav_the_author_posts_link
+  }
+}
+
+
+if ( ! function_exists( 'storemsav_post_meta' ) ) {
+	/**
+	 * Display the post meta
+	 *
+	 * @return      void
+   *
+   * @since       2.2.4.1
+	 */
+	function storemsav_post_meta() {
+
+	  echo '<aside class="entry-meta">';
+
+	  // Hide category and tag text for pages on Search.
+	  if ( 'post' == get_post_type() ) {
+
+	    /**
+	     * Hide post author
+	     */
+	    if ( ! StoreMsav::get_instance()->hide_post_author ) {
+		    echo '<div class="entry-meta-item author">';
+		    echo get_avatar( get_the_author_meta( 'ID' ), 128 );
+		    echo '<div class="label">' . esc_attr( __( 'Written by', 'storefront' ) ) . '</div>';
+		    the_author_posts_link();
+		    echo '</div>';
+	    }
+
+	    /**
+	     * Translators: used between list items, there is a space after the comma
+	     */
+	    $categories_list = get_the_category_list( __( ', ', 'storefront' ) );
+
+	    if ( $categories_list ) {
+		    echo '<div class="entry-meta-item cat-links">';
+		    echo '<div class="label">' . esc_attr( __( 'Posted in', 'storefront' ) ) . '</div>';
+		    echo wp_kses_post( $categories_list );
+		    echo '</div>';
+		    // End if categories.
+	    }
+
+	    /**
+	     * Translators: used between list items, there is a space after the comma
+	     */
+	    $tags_list = get_the_tag_list( '', __( ', ', 'storefront' ) );
+
+	    if ( $tags_list ) {
+		    echo '<div class="entry-meta-item tags-links">'
+		         . '<div class="label">' . esc_attr( __( 'Tagged', 'storefront' ) ) . '</div>'
+		         . wp_kses_post( $tags_list )
+		         . '</div>';
+		    // End if $tags_list.
+	    }
+
+	    // End if 'post' == get_post_type()
+    }
+
+    if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
+	    echo '<div class="entry-meta-item comments-link">'
+	         . '<div class="label">' . esc_attr( __( 'Comments', 'storefront' ) ) . '</div>'
+	         . '<span class="comments-link">';
+	    comments_popup_link( __( 'Leave a comment', 'storefront' ), __( '1 Comment', 'storefront' ), __( '% Comments', 'storefront' ) );
+	    echo '</span>'
+           . '</div>'
+	         . '</aside>';
+    }
+
+    // storemsav_post_meta
+	}
+}

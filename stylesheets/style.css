@@ -467,16 +467,23 @@
   }
   /* line 331, ../sass/theme/base/_layout.scss */
   .hentry.type-post .entry-meta {
-    width: 17.64706%;
-    float: left;
-    margin-right: 5.88235%;
-    font-size: 0.875em;
-  }
-  /* line 336, ../sass/theme/base/_layout.scss */
-  .hentry.type-post .entry-content {
-    width: 76.47059%;
+    width: 100%;
     float: right;
     margin-right: 0;
+    font-size: 0.875em;
+    overflow: hidden;
+  }
+  /* line 336, ../sass/theme/base/_layout.scss */
+  .hentry.type-post .entry-meta .entry-meta-item {
+    display: block;
+    float: left;
+    margin: 1em;
+  }
+  /* line 343, ../sass/theme/base/_layout.scss */
+  .hentry.type-post .entry-content {
+    width: 100%;
+    float: left;
+    margin-right: 5.88235%;
   }
 
   /**
@@ -484,7 +491,7 @@
    *
    * 1 - We have to use a `left` declaration so that dropdowns are revealed when tabbed.
    */
-  /* line 346, ../sass/theme/base/_layout.scss */
+  /* line 354, ../sass/theme/base/_layout.scss */
   .menu-toggle,
   .handheld-navigation,
   .main-navigation.toggled .handheld-navigation,
@@ -492,19 +499,19 @@
     display: none;
   }
 
-  /* line 353, ../sass/theme/base/_layout.scss */
+  /* line 361, ../sass/theme/base/_layout.scss */
   .primary-navigation {
     display: block;
   }
 
-  /* line 357, ../sass/theme/base/_layout.scss */
+  /* line 365, ../sass/theme/base/_layout.scss */
   .main-navigation,
   .secondary-navigation {
     clear: both;
     display: block;
     width: 100%;
   }
-  /* line 364, ../sass/theme/base/_layout.scss */
+  /* line 372, ../sass/theme/base/_layout.scss */
   .main-navigation ul,
   .secondary-navigation ul {
     list-style: none;
@@ -512,45 +519,45 @@
     padding-left: 0;
     display: block;
   }
-  /* line 370, ../sass/theme/base/_layout.scss */
+  /* line 378, ../sass/theme/base/_layout.scss */
   .main-navigation ul li,
   .secondary-navigation ul li {
     position: relative;
     display: inline-block;
     text-align: left;
   }
-  /* line 375, ../sass/theme/base/_layout.scss */
+  /* line 383, ../sass/theme/base/_layout.scss */
   .main-navigation ul li a,
   .secondary-navigation ul li a {
     display: block;
   }
-  /* line 378, ../sass/theme/base/_layout.scss */
+  /* line 386, ../sass/theme/base/_layout.scss */
   .main-navigation ul li a:before,
   .secondary-navigation ul li a:before {
     display: none;
   }
-  /* line 386, ../sass/theme/base/_layout.scss */
+  /* line 394, ../sass/theme/base/_layout.scss */
   .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul,
   .secondary-navigation ul li:hover > ul,
   .secondary-navigation ul li.focus > ul {
     left: 0;
     display: block;
   }
-  /* line 391, ../sass/theme/base/_layout.scss */
+  /* line 399, ../sass/theme/base/_layout.scss */
   .main-navigation ul li:hover > ul li > ul, .main-navigation ul li.focus > ul li > ul,
   .secondary-navigation ul li:hover > ul li > ul,
   .secondary-navigation ul li.focus > ul li > ul {
     left: -9999px;
     /* 1 */
   }
-  /* line 394, ../sass/theme/base/_layout.scss */
+  /* line 402, ../sass/theme/base/_layout.scss */
   .main-navigation ul li:hover > ul li > ul.sub-menu--is-touch-device, .main-navigation ul li.focus > ul li > ul.sub-menu--is-touch-device,
   .secondary-navigation ul li:hover > ul li > ul.sub-menu--is-touch-device,
   .secondary-navigation ul li.focus > ul li > ul.sub-menu--is-touch-device {
     display: none;
     left: 0;
   }
-  /* line 402, ../sass/theme/base/_layout.scss */
+  /* line 410, ../sass/theme/base/_layout.scss */
   .main-navigation ul li:hover > ul li:hover > ul, .main-navigation ul li:hover > ul li.focus > ul, .main-navigation ul li.focus > ul li:hover > ul, .main-navigation ul li.focus > ul li.focus > ul,
   .secondary-navigation ul li:hover > ul li:hover > ul,
   .secondary-navigation ul li:hover > ul li.focus > ul,
@@ -560,7 +567,7 @@
     top: 0;
     display: block;
   }
-  /* line 415, ../sass/theme/base/_layout.scss */
+  /* line 423, ../sass/theme/base/_layout.scss */
   .main-navigation ul ul,
   .secondary-navigation ul ul {
     float: left;
@@ -570,24 +577,24 @@
     left: -9999px;
     /* 1 */
   }
-  /* line 422, ../sass/theme/base/_layout.scss */
+  /* line 430, ../sass/theme/base/_layout.scss */
   .main-navigation ul ul.sub-menu--is-touch-device,
   .secondary-navigation ul ul.sub-menu--is-touch-device {
     display: none;
     left: 0;
   }
-  /* line 427, ../sass/theme/base/_layout.scss */
+  /* line 435, ../sass/theme/base/_layout.scss */
   .main-navigation ul ul li,
   .secondary-navigation ul ul li {
     display: block;
   }
-  /* line 430, ../sass/theme/base/_layout.scss */
+  /* line 438, ../sass/theme/base/_layout.scss */
   .main-navigation ul ul li a,
   .secondary-navigation ul ul li a {
     width: 200px;
   }
 
-  /* line 442, ../sass/theme/base/_layout.scss */
+  /* line 450, ../sass/theme/base/_layout.scss */
   ul.menu li.current-menu-item > a {
     color: #43454b;
   }
@@ -595,7 +602,7 @@
   /**
    * Primary Navigation
    */
-  /* line 452, ../sass/theme/base/_layout.scss */
+  /* line 460, ../sass/theme/base/_layout.scss */
   .storefront-primary-navigation {
     clear: both;
     margin-left: -99em;
@@ -613,63 +620,63 @@
     clear: both;
   }
 
-  /* line 462, ../sass/theme/base/_layout.scss */
+  /* line 470, ../sass/theme/base/_layout.scss */
   .main-navigation div.menu {
     display: block;
   }
-  /* line 466, ../sass/theme/base/_layout.scss */
+  /* line 474, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu,
   .main-navigation ul.nav-menu {
     max-height: none;
     overflow: visible;
   }
-  /* line 473, ../sass/theme/base/_layout.scss */
+  /* line 481, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu > li > a,
   .main-navigation ul.nav-menu > li > a {
     padding: 1.618em 1em;
   }
-  /* line 477, ../sass/theme/base/_layout.scss */
+  /* line 485, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu > li:first-child,
   .main-navigation ul.nav-menu > li:first-child {
     margin-left: -1em;
   }
-  /* line 484, ../sass/theme/base/_layout.scss */
+  /* line 492, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu > li.menu-item-has-children:hover:after, .main-navigation ul.menu > li.page_item_has_children:hover:after,
   .main-navigation ul.nav-menu > li.menu-item-has-children:hover:after,
   .main-navigation ul.nav-menu > li.page_item_has_children:hover:after {
     display: block;
   }
-  /* line 491, ../sass/theme/base/_layout.scss */
+  /* line 499, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu ul,
   .main-navigation ul.nav-menu ul {
     margin-left: 0;
   }
-  /* line 496, ../sass/theme/base/_layout.scss */
+  /* line 504, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu ul li a,
   .main-navigation ul.nav-menu ul li a {
     padding: 0.875em 1.41575em;
     font-weight: 400;
     font-size: 0.875em;
   }
-  /* line 502, ../sass/theme/base/_layout.scss */
+  /* line 510, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu ul li:last-child,
   .main-navigation ul.nav-menu ul li:last-child {
     border-bottom: 0;
   }
-  /* line 507, ../sass/theme/base/_layout.scss */
+  /* line 515, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu ul ul,
   .main-navigation ul.nav-menu ul ul {
     margin-left: 0;
     box-shadow: none;
   }
-  /* line 512, ../sass/theme/base/_layout.scss */
+  /* line 520, ../sass/theme/base/_layout.scss */
   .main-navigation ul.menu ul a:hover,
   .main-navigation ul.menu ul li:hover > a,
   .main-navigation ul.nav-menu ul a:hover,
   .main-navigation ul.nav-menu ul li:hover > a {
     background-color: rgba(0, 0, 0, 0.025);
   }
-  /* line 519, ../sass/theme/base/_layout.scss */
+  /* line 527, ../sass/theme/base/_layout.scss */
   .main-navigation a {
     padding: 0 1em 2.29068em;
   }
@@ -677,53 +684,53 @@
   /**
    * Secondary Navigation
    */
-  /* line 527, ../sass/theme/base/_layout.scss */
+  /* line 535, ../sass/theme/base/_layout.scss */
   .secondary-navigation {
     margin: 0 0 1.618em;
     width: auto;
     clear: none;
     line-height: 1;
   }
-  /* line 533, ../sass/theme/base/_layout.scss */
+  /* line 541, ../sass/theme/base/_layout.scss */
   .secondary-navigation .menu {
     font-size: 0.875em;
     width: auto;
     float: right;
   }
-  /* line 538, ../sass/theme/base/_layout.scss */
+  /* line 546, ../sass/theme/base/_layout.scss */
   .secondary-navigation .menu > li:hover > a {
     text-decoration: none;
   }
-  /* line 543, ../sass/theme/base/_layout.scss */
+  /* line 551, ../sass/theme/base/_layout.scss */
   .secondary-navigation .menu ul a {
     padding: 0.326em 0.875em;
     background: rgba(0, 0, 0, 0.05);
   }
-  /* line 548, ../sass/theme/base/_layout.scss */
+  /* line 556, ../sass/theme/base/_layout.scss */
   .secondary-navigation .menu ul li:first-child a {
     padding-top: 1em;
   }
-  /* line 552, ../sass/theme/base/_layout.scss */
+  /* line 560, ../sass/theme/base/_layout.scss */
   .secondary-navigation .menu ul li:last-child a {
     padding-bottom: 1em;
   }
-  /* line 556, ../sass/theme/base/_layout.scss */
+  /* line 564, ../sass/theme/base/_layout.scss */
   .secondary-navigation .menu ul ul {
     margin-top: -0.61805em;
   }
-  /* line 561, ../sass/theme/base/_layout.scss */
+  /* line 569, ../sass/theme/base/_layout.scss */
   .secondary-navigation .menu a {
     padding: 1em 0.875em;
     color: #737781;
     font-weight: 400;
   }
-  /* line 566, ../sass/theme/base/_layout.scss */
+  /* line 574, ../sass/theme/base/_layout.scss */
   .secondary-navigation .menu a:hover {
     text-decoration: none;
   }
 }
 @media (max-width: 66.49894em) {
-  /* line 575, ../sass/theme/base/_layout.scss */
+  /* line 583, ../sass/theme/base/_layout.scss */
   .col-full {
     margin-left: 2.61792em;
     margin-right: 2.61792em;
@@ -731,7 +738,7 @@
   }
 }
 @media (max-width: 568px) {
-  /* line 583, ../sass/theme/base/_layout.scss */
+  /* line 591, ../sass/theme/base/_layout.scss */
   .col-full {
     margin-left: 1.41575em;
     margin-right: 1.41575em;

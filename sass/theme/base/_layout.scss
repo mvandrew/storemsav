@@ -329,12 +329,20 @@
 		@include clearfix;
 
 		.entry-meta {
-			@include span(2 of 9);
+			// @include span(2 of 9);
+			@include span(last 9 of 9);
 			font-size: ms(-1);
+      overflow: hidden;
+      .entry-meta-item {
+        display: block;
+        float: left;
+        margin: ms(1);
+      }
 		}
 
 		.entry-content {
-			@include span(last 7 of 9);
+			// @include span(last 7 of 9);
+			@include span(first 9 of 9);
 		}
 	}
 

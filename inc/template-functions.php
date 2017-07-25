@@ -27,3 +27,24 @@ if ( !function_exists('storemsav_head') ) {
 		// storemsav_head
 	}
 }
+
+
+if ( !function_exists('storemsav_remove_parent_hooks') ) {
+	/**
+	 * Remove parent hooks
+	 *
+	 * @return      void
+	 *
+	 * @since       2.2.4.1
+	 */
+	function storemsav_remove_parent_hooks() {
+
+		/**
+		 * Post hooks
+		 */
+		remove_action( 'storefront_loop_post',           'storefront_post_meta',            20 );
+		remove_action( 'storefront_single_post',         'storefront_post_meta',            20 );
+
+		// storemsav_remove_parent_hooks
+	}
+}
