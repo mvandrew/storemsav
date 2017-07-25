@@ -1,0 +1,129 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: StoreMSAV\n"
+"POT-Creation-Date: 2017-07-25 11:06+0300\n"
+"PO-Revision-Date: 2017-07-25 11:06+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/classes/class-storemsavcounters.php:144
+msgid "Counters IDs"
+msgstr ""
+
+#: inc/classes/class-storemsavcounters.php:156
+msgid "Yandex Metrika ID"
+msgstr ""
+
+#: inc/classes/class-storemsavcounters.php:169
+msgid "Yandex Webmaster ID"
+msgstr ""
+
+#: inc/classes/class-storemsavcounters.php:182
+msgid "Google Analytics ID"
+msgstr ""
+
+#: inc/classes/class-storemsavcounters.php:195
+msgid "Google Webmaster ID"
+msgstr ""
+
+#: inc/classes/class-storemsavcounters.php:208
+msgid "Facebook Pixel ID"
+msgstr ""
+
+#: inc/classes/class-storemsavcounters.php:221
+msgid "Mail.Ru Counter ID"
+msgstr ""
+
+#: inc/customizer.php:29
+msgid "Change the Additional Options from here as you want"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:41
+msgid "Display Settings"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "Hide post author"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Hide powered link"
+msgstr ""
+
+#: inc/customizer.php:80
+msgid "Design Site Link"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid "Show design site link"
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "Design site link text"
+msgstr ""
+
+#: inc/customizer.php:119
+msgid "Design site link URL"
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "Design site link alias"
+msgstr ""
+
+#: inc/customizer.php:144
+msgid "Copyright Info"
+msgstr ""
+
+#: inc/customizer.php:157
+msgid "Show Copyright Info"
+msgstr ""
+
+#: inc/customizer.php:170
+msgid "Copyright Owner"
+msgstr ""
+
+#: inc/customizer.php:183
+msgid "First Copyright Year"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "StoreMSAV"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/mvandrew/storemsav"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Store MSAV is a child Storefront WordPress theme for creating an e-Commerce "
+"site. Store MSAV WordPress theme contains some additional features to "
+"simplify the addition of analytical systems, such as Google Analytics, "
+"Yandex Metrika, Facebook-pixel, Mail.ru counter and others."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Andrey Mishchenko"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.msav.ru/"
+msgstr ""

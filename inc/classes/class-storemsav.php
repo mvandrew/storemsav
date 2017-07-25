@@ -3,8 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-if ( !class_exists('StoreMsav') ) :
+if ( !class_exists('StoreMsav') ) {
 
 	/**
 	 * Base theme Class StoreMsav
@@ -28,12 +27,13 @@ if ( !class_exists('StoreMsav') ) :
 		 * @return StoreMsav
 		 */
 		public function get_instance() {
-			if (self::$INSTANCE == null) {
+			if ( self::$INSTANCE == null ) {
 				self::$INSTANCE = new StoreMsav();
 			}
 
 			return self::$INSTANCE;
 		} // get_instance
+
 	}
 
-endif;
+}

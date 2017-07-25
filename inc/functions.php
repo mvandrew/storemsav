@@ -50,7 +50,8 @@ if ( !function_exists('storemsav_enqueue_scripts') ) {
 
 		wp_enqueue_style( 'storemsav-fonts', $fonts_url, array(), null );
 
-	} // storemsav_enqueue_scripts
+		// storemsav_enqueue_scripts
+	}
 }
 
 
@@ -68,5 +69,29 @@ if ( !function_exists( 'storemsav_setup') ) {
 		 */
 		load_theme_textdomain( 'storemsav', _STM_CHILD_DIR . '/languages' );
 
-	} // storemsav_setup
+		// storemsav_setup
+	}
+}
+
+
+if ( !function_exists('storemsav_checkbox_sanitize') ) {
+	/**
+	 * Checkbox sanitization
+	 *
+	 * @param $input
+	 *
+	 * @see storemsav_customize_register()
+	 *
+	 * @return int|string
+	 */
+	function storemsav_checkbox_sanitize( $input ) {
+
+		if ( $input == 1 ) {
+			return 1;
+		} else {
+			return '';
+		}
+
+		// storemsav_checkbox_sanitize
+	}
 }
