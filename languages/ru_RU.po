@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: StoreMSAV\n"
-"POT-Creation-Date: 2017-07-25 17:50+0300\n"
-"PO-Revision-Date: 2017-07-25 17:52+0300\n"
+"POT-Creation-Date: 2017-07-25 21:34+0300\n"
+"PO-Revision-Date: 2017-07-25 21:35+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -130,6 +130,39 @@ msgstr "Тему %1$s доработал %2$s."
 #: inc/storemsav-template-functions.php:82
 msgid "Andrey Mishchenko"
 msgstr "Андрей Мищенко"
+
+#: inc/storemsav-template-functions.php:244
+msgid "Written by"
+msgstr "Автор"
+
+#: inc/storemsav-template-functions.php:252
+#: inc/storemsav-template-functions.php:265
+msgid ", "
+msgstr ""
+
+#: inc/storemsav-template-functions.php:256
+msgid "Posted in"
+msgstr "Категории"
+
+#: inc/storemsav-template-functions.php:269
+msgid "Tagged"
+msgstr "Метки"
+
+#: inc/storemsav-template-functions.php:280
+msgid "Comments"
+msgstr "Комментарии"
+
+#: inc/storemsav-template-functions.php:282
+msgid "Leave a comment"
+msgstr "Оставить комментарий"
+
+#: inc/storemsav-template-functions.php:282
+msgid "1 Comment"
+msgstr "1 Комментарий"
+
+#: inc/storemsav-template-functions.php:282
+msgid "% Comments"
+msgstr "% Комментария(ев)"
 
 #. Theme Name of the plugin/theme
 msgid "StoreMSAV"

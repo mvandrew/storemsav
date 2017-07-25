@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: StoreMSAV\n"
-"POT-Creation-Date: 2017-07-25 17:50+0300\n"
+"POT-Creation-Date: 2017-07-25 21:34+0300\n"
 "PO-Revision-Date: 2017-07-25 11:06+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -127,6 +127,39 @@ msgstr ""
 #. Author of the plugin/theme
 #: inc/storemsav-template-functions.php:82
 msgid "Andrey Mishchenko"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:244
+msgid "Written by"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:252
+#: inc/storemsav-template-functions.php:265
+msgid ", "
+msgstr ""
+
+#: inc/storemsav-template-functions.php:256
+msgid "Posted in"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:269
+msgid "Tagged"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:280
+msgid "Comments"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:282
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:282
+msgid "1 Comment"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:282
+msgid "% Comments"
 msgstr ""
 
 #. Theme Name of the plugin/theme

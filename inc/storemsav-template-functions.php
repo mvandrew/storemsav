@@ -241,7 +241,7 @@ if ( ! function_exists( 'storemsav_post_meta' ) ) {
 	    if ( ! StoreMsav::get_instance()->hide_post_author ) {
 		    echo '<div class="entry-meta-item author">';
 		    echo get_avatar( get_the_author_meta( 'ID' ), 128 );
-		    echo '<div class="label">' . esc_attr( __( 'Written by', 'storefront' ) ) . '</div>';
+		    echo '<div class="label">' . esc_attr( __( 'Written by', 'storemsav' ) ) . '</div>';
 		    the_author_posts_link();
 		    echo '</div>';
 	    }
@@ -249,11 +249,11 @@ if ( ! function_exists( 'storemsav_post_meta' ) ) {
 	    /**
 	     * Translators: used between list items, there is a space after the comma
 	     */
-	    $categories_list = get_the_category_list( __( ', ', 'storefront' ) );
+	    $categories_list = get_the_category_list( __( ', ', 'storemsav' ) );
 
 	    if ( $categories_list ) {
 		    echo '<div class="entry-meta-item cat-links">';
-		    echo '<div class="label">' . esc_attr( __( 'Posted in', 'storefront' ) ) . '</div>';
+		    echo '<div class="label">' . esc_attr( __( 'Posted in', 'storemsav' ) ) . '</div>';
 		    echo wp_kses_post( $categories_list );
 		    echo '</div>';
 		    // End if categories.
@@ -262,11 +262,11 @@ if ( ! function_exists( 'storemsav_post_meta' ) ) {
 	    /**
 	     * Translators: used between list items, there is a space after the comma
 	     */
-	    $tags_list = get_the_tag_list( '', __( ', ', 'storefront' ) );
+	    $tags_list = get_the_tag_list( '', __( ', ', 'storemsav' ) );
 
 	    if ( $tags_list ) {
 		    echo '<div class="entry-meta-item tags-links">'
-		         . '<div class="label">' . esc_attr( __( 'Tagged', 'storefront' ) ) . '</div>'
+		         . '<div class="label">' . esc_attr( __( 'Tagged', 'storemsav' ) ) . '</div>'
 		         . wp_kses_post( $tags_list )
 		         . '</div>';
 		    // End if $tags_list.
@@ -277,9 +277,9 @@ if ( ! function_exists( 'storemsav_post_meta' ) ) {
 
     if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
 	    echo '<div class="entry-meta-item comments-link">'
-	         . '<div class="label">' . esc_attr( __( 'Comments', 'storefront' ) ) . '</div>'
+	         . '<div class="label">' . esc_attr( __( 'Comments', 'storemsav' ) ) . '</div>'
 	         . '<span class="comments-link">';
-	    comments_popup_link( __( 'Leave a comment', 'storefront' ), __( '1 Comment', 'storefront' ), __( '% Comments', 'storefront' ) );
+	    comments_popup_link( __( 'Leave a comment', 'storemsav' ), __( '1 Comment', 'storefront' ), __( '% Comments', 'storemsav' ) );
 	    echo '</span>'
            . '</div>'
 	         . '</aside>';
