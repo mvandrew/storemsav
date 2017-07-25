@@ -2,3 +2,13 @@
 // Header Style
 //
 
+.site-branding {
+  .site-title {
+    font-size: 1.8em;
+    font-weight: 300;
+    text-transform: uppercase;
+    a {
+      font-weight: 300;
+    }
+  }
+}

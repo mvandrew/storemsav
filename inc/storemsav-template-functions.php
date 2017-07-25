@@ -101,3 +101,80 @@ if ( ! function_exists( 'storemsav_credit' ) ) {
 		// storemsav_credit
 	}
 }
+
+
+if ( ! function_exists( 'storemsav_site_branding' ) ) {
+	/**
+	 * Site branding wrapper and display
+	 *
+	 * @since       2.2.4.1
+	 * @return      void
+	 */
+	function storemsav_site_branding() {
+
+	  echo '<div class="site-branding">';
+	  storemsav_site_title_or_logo();
+	  echo '</div>';
+
+	  // storemsav_site_branding
+	}
+}
+
+if ( ! function_exists( 'storemsav_site_title_or_logo' ) ) {
+	/**
+	 * Display the site title or logo
+	 *
+	 * @since       2.2.4.1
+	 * @param       bool $echo Echo the string or return it.
+	 * @return      string
+	 */
+	function storemsav_site_title_or_logo( $echo = true ) {
+
+		if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+
+		  $logo = get_custom_logo();
+			$html = $logo; // Removed H1 tag
+
+		} elseif ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
+
+			// Copied from jetpack_the_site_logo() function.
+			$logo    = site_logo()->logo;
+			$logo_id = get_theme_mod( 'custom_logo' ); // Check for WP 4.5 Site Logo
+			$logo_id = $logo_id ? $logo_id : $logo['id']; // Use WP Core logo if present, otherwise use Jetpack's.
+			$size    = site_logo()->theme_size();
+			$html    = sprintf( '<a href="%1$s" class="site-logo-link" rel="home" itemprop="url">%2$s</a>',
+				esc_url( home_url( '/' ) ),
+				wp_get_attachment_image(
+					$logo_id,
+					$size,
+					false,
+					array(
+						'class'     => 'site-logo attachment-' . $size,
+						'data-size' => $size,
+						'itemprop'  => 'logo'
+					)
+				)
+			);
+
+			$html = apply_filters( 'jetpack_the_site_logo', $html, $logo, $size );
+
+		} else {
+
+			$tag = 'div'; // Removed H1 tag
+
+			$html = '<' . esc_attr( $tag ) . ' class="beta site-title"><a href="' . esc_url( home_url( '/' ) ) . '" rel="home">' . esc_html( get_bloginfo( 'name' ) ) . '</a></' . esc_attr( $tag ) .'>';
+
+			if ( '' !== get_bloginfo( 'description' ) ) {
+				$html .= '<p class="site-description">' . esc_html( get_bloginfo( 'description', 'display' ) ) . '</p>';
+			}
+		}
+
+		if ( $echo ) {
+		  echo $html;
+    }
+
+	  return $html;
+
+		// storemsav_site_title_or_logo
+	}
+}

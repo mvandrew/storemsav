@@ -26,6 +26,7 @@ define( '_STM_CHILD_DIR',                   get_stylesheet_directory() );
 
 define( '_STM_INCLUDES_DIR',                _STM_CHILD_DIR . '/inc' );
 define( '_STM_CLASSES_DIR',                 _STM_INCLUDES_DIR . '/classes' );
+define( '_STM_WOOCOMMERCE_DIR',             _STM_INCLUDES_DIR . '/woocommerce' );
 
 // Template Elements Folder
 define( '_STM_TEMPLATE_ELEMENTS_DIR',       _STM_CHILD_DIR . '/template-elements' );
@@ -48,6 +49,15 @@ require_once ( _STM_INCLUDES_DIR . '/template-functions.php' );
 require_once ( _STM_INCLUDES_DIR . '/template-hooks.php' );
 require_once ( _STM_INCLUDES_DIR . '/storemsav-template-functions.php' );
 require_once ( _STM_INCLUDES_DIR . '/storemsav-template-hooks.php' );
+
+
+// ------------------------------------------
+// Include WooCommerce Hooks
+// ------------------------------------------
+if ( storemsav_is_woocommerce_activated() ) {
+	require_once ( _STM_WOOCOMMERCE_DIR . '/storemsav-woocommerce-template-functions.php' );
+	require_once ( _STM_WOOCOMMERCE_DIR . '/storemsav-woocommerce-template-hooks.php' );
+}
 
 
 // ------------------------------------------

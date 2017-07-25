@@ -10,6 +10,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+
+if ( ! function_exists( 'storemsav_is_woocommerce_activated' ) ) {
+	/**
+	 * Query WooCommerce activation
+	 *
+	 * @return bool
+	 */
+	function storemsav_is_woocommerce_activated() {
+
+		return class_exists( 'WooCommerce' ) ? true : false;
+
+		// storemsav_is_woocommerce_activated
+	}
+}
+
+
 if ( !function_exists('storemsav_enqueue_scripts') ) {
 	/**
 	 * Enqueue Scripts Hook function

@@ -16,7 +16,7 @@
   /* line 21, ../sass/theme/base/_layout.scss */
   .site-header .site-branding {
     display: block;
-    width: 21.73913%;
+    width: 39.13043%;
     float: left;
     margin-right: 4.34783%;
     clear: both;
@@ -738,6 +738,17 @@
     padding: 0;
   }
 }
+/* line 6, ../sass/theme/elements/_header.scss */
+.site-branding .site-title {
+  font-size: 1.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* line 10, ../sass/theme/elements/_header.scss */
+.site-branding .site-title a {
+  font-weight: 300;
+}
+
 /* line 5, ../sass/theme/elements/_footer.scss */
 .footer-credit {
   margin-top: 1em;
