@@ -226,6 +226,102 @@ if ( !class_exists('StoreMsavCounters') ) :
 			// customize_register
 		}
 
+
+		/**
+		 * Displays Facebook Pixel code.
+		 *
+		 * @return void
+		 */
+		public function facebook_pixel_code() {
+
+			$template_file = _STM_TEMPLATE_ELEMENTS_DIR . '/counter_facebook_pixel.php';
+			if ( mb_strlen($this->facebook_pixel_id) > 0 && file_exists($template_file) ) {
+				include ($template_file);
+			}
+
+			// facebook_pixel_code
+		}
+
+
+		/**
+		 * Displays Mail.Ru Counter code.
+		 *
+		 * @return void
+		 */
+		public function mailru_counter_code() {
+
+			$template_file = _STM_TEMPLATE_ELEMENTS_DIR . '/counter_mail_ru.php';
+			if ( mb_strlen($this->mailru_id) > 0 && file_exists($template_file) ) {
+				include ($template_file);
+			}
+
+			// mailru_counter_code
+		}
+
+
+		/**
+		 * Displays Yandex Metrika code.
+		 *
+		 * @return void
+		 */
+		public function yandex_metrika_code() {
+
+			$template_file = _STM_TEMPLATE_ELEMENTS_DIR . '/counter_yandex_metrika.php';
+			if ( mb_strlen($this->yandex_metrika_id) > 0 && file_exists($template_file) ) {
+				include ($template_file);
+			}
+
+			// yandex_metrika_code
+		}
+
+
+		/**
+		 * Displays Yandex Webmaster code.
+		 *
+		 * @return void
+		 */
+		public function yandex_webmaster_code() {
+
+			if ( mb_strlen($this->yandex_webmaster_id) > 0 ) {
+				printf( '<meta name="yandex-verification" content="%s" />',
+					$this->yandex_webmaster_id );
+			}
+
+			// yandex_webmaster_code
+		}
+
+
+		/**
+		 * Displays Google Analytics code.
+		 *
+		 * @return void
+		 */
+		public function google_analytics_code() {
+
+			$template_file = _STM_TEMPLATE_ELEMENTS_DIR . '/counter_google_analytics.php';
+			if ( mb_strlen($this->google_analytics_id) > 0 && file_exists($template_file) ) {
+				include ($template_file);
+			}
+
+			// google_analytics_code
+		}
+
+
+		/**
+		 * Displays Google Webmaster code.
+		 *
+		 * @return void
+		 */
+		public function google_webmaster_code() {
+
+			if ( mb_strlen($this->google_webmaster_id) > 0 ) {
+				printf( '<meta name="google-site-verification" content="%s" />',
+					$this->google_webmaster_id );
+			}
+
+			// google_webmaster_code
+		}
+
 	}
 
 endif;

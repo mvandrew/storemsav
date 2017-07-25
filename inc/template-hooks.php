@@ -21,3 +21,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'wp_enqueue_scripts',               'storemsav_enqueue_scripts',        40);
 add_action( 'after_setup_theme',                'storemsav_setup' );
 add_action( 'customize_register',               'storemsav_customize_register' );
+
+
+/**
+ * Header Hooks
+ *
+ * @see storemsav_head()
+ */
+add_action( 'wp_head',                          'storemsav_head' );

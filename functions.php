@@ -46,6 +46,8 @@ require_once ( _STM_INCLUDES_DIR . '/functions.php' );
 require_once ( _STM_INCLUDES_DIR . '/customizer.php' );
 require_once ( _STM_INCLUDES_DIR . '/template-functions.php' );
 require_once ( _STM_INCLUDES_DIR . '/template-hooks.php' );
+require_once ( _STM_INCLUDES_DIR . '/storemsav-template-functions.php' );
+require_once ( _STM_INCLUDES_DIR . '/storemsav-template-hooks.php' );
 
 
 // ------------------------------------------
