@@ -111,3 +111,34 @@ if ( !function_exists('storemsav_checkbox_sanitize') ) {
 		// storemsav_checkbox_sanitize
 	}
 }
+
+
+if ( !function_exists('storemsav_widgets_init') ) {
+	/**
+	 * Register widget area.
+	 *
+	 * @since       2.2.4.1
+	 * @link        http://codex.wordpress.org/Function_Reference/register_sidebar
+	 *
+	 * @return      void
+	 */
+	function storemsav_widgets_init() {
+
+		/**
+		 * Register footer full width sidebar
+		 */
+		$args                   = array(
+			'name'              => __('Footer Full Width', 'storemsav'),
+			'id'                => "footer-full-width",
+			'description'       => __('Widgets added to this region will appear after the footer widgets and above the copyright blocks.', 'storemsav'),
+			'class'             => '',
+			'before_widget'     => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'      => '</div>',
+			'before_title'      => '<span class="gamma widget-title">',
+			'after_title'       => '</span>',
+		);
+		register_sidebar( $args );
+
+		// storemsav_widgets_init
+	}
+}

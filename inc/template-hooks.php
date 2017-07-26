@@ -17,10 +17,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see storemsav_enqueue_scripts()
  * @see storemsav_setup()
  * @see storemsav_customize_register()
+ * @see storemsav_widgets_init()
  */
 add_action( 'wp_enqueue_scripts',               'storemsav_enqueue_scripts',        40);
 add_action( 'after_setup_theme',                'storemsav_setup' );
 add_action( 'customize_register',               'storemsav_customize_register' );
+add_action( 'widgets_init',                     'storemsav_widgets_init' );
 
 
 /**

@@ -29,10 +29,12 @@ add_action( 'storemsav_header',                         'storefront_primary_navi
  * Footer
  *
  * @see storefront_footer_widgets()
+ * @see storemsav_footer_widgets()
  * @see storemsav_credit()
  */
 add_action( 'storemsav_footer',                         'storefront_footer_widgets',                    10 );
-add_action( 'storemsav_footer',                         'storemsav_credit',                             20 );
+add_action( 'storemsav_footer',                         'storemsav_footer_widgets',                     20 );
+add_action( 'storemsav_footer',                         'storemsav_credit',                             30 );
 
 
 /**

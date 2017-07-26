@@ -761,3 +761,28 @@
   margin-top: 1em;
   font-size: 0.875em;
 }
+
+/* line 11, ../sass/theme/elements/_footer.scss */
+.site-info {
+  padding-top: 0;
+  margin-top: 1em;
+}
+
+/* line 17, ../sass/theme/elements/_footer.scss */
+.footer-widget-full-width {
+  display: block;
+}
+/* line 2, ../sass/theme/utils/_mixins.scss */
+.footer-widget-full-width:before, .footer-widget-full-width:after {
+  content: "";
+  display: table;
+}
+/* line 6, ../sass/theme/utils/_mixins.scss */
+.footer-widget-full-width:after {
+  clear: both;
+}
+/* line 20, ../sass/theme/elements/_footer.scss */
+.footer-widget-full-width > .widget {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}

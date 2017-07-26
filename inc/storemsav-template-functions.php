@@ -33,6 +33,7 @@ if ( ! function_exists( 'storemsav_credit' ) ) {
 	 * Display the theme credit
 	 *
 	 * @since       2.2.4.1
+   *
 	 * @return      void
 	 */
 	function storemsav_credit() {
@@ -108,6 +109,7 @@ if ( ! function_exists( 'storemsav_site_branding' ) ) {
 	 * Site branding wrapper and display
 	 *
 	 * @since       2.2.4.1
+   *
 	 * @return      void
 	 */
 	function storemsav_site_branding() {
@@ -126,6 +128,7 @@ if ( ! function_exists( 'storemsav_site_title_or_logo' ) ) {
 	 *
 	 * @since       2.2.4.1
 	 * @param       bool $echo Echo the string or return it.
+   *
 	 * @return      string
 	 */
 	function storemsav_site_title_or_logo( $echo = true ) {
@@ -184,11 +187,10 @@ if ( !function_exists('storemsav_single_post_posted_on_html') ) {
 	/**
    * Filtered posted date string
    *
-	 * @param       $output string
-	 *
-	 * @return      string
-   *
    * @since       2.2.4.1
+	 * @param       $output string
+   *
+   * @return      string
 	 */
   function storemsav_single_post_posted_on_html( $output ) {
 
@@ -223,10 +225,10 @@ if ( !function_exists('storemsav_the_author_posts_link') ) {
 if ( ! function_exists( 'storemsav_post_meta' ) ) {
 	/**
 	 * Display the post meta
-	 *
-	 * @return      void
    *
    * @since       2.2.4.1
+	 *
+	 * @return      void
 	 */
 	function storemsav_post_meta() {
 
@@ -287,4 +289,25 @@ if ( ! function_exists( 'storemsav_post_meta' ) ) {
 
     // storemsav_post_meta
 	}
+}
+
+
+if ( !function_exists('storemsav_footer_widgets') ) {
+	/**
+	 * Display the footer widget regions.
+   *
+   * @since       2.2.4.1
+   *
+   * @return      void
+	 */
+  function storemsav_footer_widgets() {
+
+    if ( is_active_sidebar('footer-full-width') ) {
+      echo '<div class="block footer-widget-full-width">';
+      dynamic_sidebar( 'footer-full-width' );
+      echo '</div>';
+    }
+
+    // storemsav_footer_widgets
+  }
 }

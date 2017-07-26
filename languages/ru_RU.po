@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: StoreMSAV\n"
-"POT-Creation-Date: 2017-07-25 21:34+0300\n"
-"PO-Revision-Date: 2017-07-25 21:35+0300\n"
+"POT-Creation-Date: 2017-07-26 10:05+0300\n"
+"PO-Revision-Date: 2017-07-26 10:06+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -108,6 +108,18 @@ msgstr "Владелец авторских прав"
 #: inc/customizer.php:197
 msgid "First Copyright Year"
 msgstr "Первый год возникновения прав"
+
+#: inc/functions.php:131
+msgid "Footer Full Width"
+msgstr "Подвал по ширине"
+
+#: inc/functions.php:133
+msgid ""
+"Widgets added to this region will appear after the footer widgets and above "
+"the copyright blocks."
+msgstr ""
+"Виджеты, добавленные в этот блок, появятся после виджетов нижнего "
+"колонтитула и над блоками авторских прав."
 
 #: inc/storemsav-template-functions.php:51
 #, php-format

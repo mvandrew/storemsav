@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: StoreMSAV\n"
-"POT-Creation-Date: 2017-07-25 21:34+0300\n"
+"POT-Creation-Date: 2017-07-26 10:05+0300\n"
 "PO-Revision-Date: 2017-07-25 11:06+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -106,6 +106,16 @@ msgstr ""
 
 #: inc/customizer.php:197
 msgid "First Copyright Year"
+msgstr ""
+
+#: inc/functions.php:131
+msgid "Footer Full Width"
+msgstr ""
+
+#: inc/functions.php:133
+msgid ""
+"Widgets added to this region will appear after the footer widgets and above "
+"the copyright blocks."
 msgstr ""
 
 #: inc/storemsav-template-functions.php:51
