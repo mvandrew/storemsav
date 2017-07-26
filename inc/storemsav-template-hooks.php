@@ -54,3 +54,13 @@ add_action( 'the_author_posts_link',                    'storemsav_the_author_po
  */
 add_action( 'storefront_loop_post',                     'storemsav_post_meta',                          35 );
 add_action( 'storefront_single_post',                   'storemsav_post_meta',                          35 );
+
+
+/**
+ * Homepage
+ *
+ * @see  storefront_product_categories()
+ * @see  storefront_homepage_content()
+ */
+add_action( 'homepage',                                 'storefront_product_categories',                80 );
+add_action( 'homepage',                                 'storefront_homepage_content',                  90 );
