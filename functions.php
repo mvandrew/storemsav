@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 // ------------------------------------------
-// Define the Store MSAV version.
+// Determining the Store MSAV theme version.
 // ------------------------------------------
 $storemsav_theme                            = wp_get_theme( 'storemsav' );
 define( '_STM_VERSION',                     $storemsav_theme['Version'] );

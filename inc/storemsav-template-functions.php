@@ -311,3 +311,31 @@ if ( !function_exists('storemsav_footer_widgets') ) {
     // storemsav_footer_widgets
   }
 }
+
+
+
+if ( ! function_exists( 'storemsav_post_thumbnail' ) ) {
+	/**
+	 * Display post thumbnail
+	 *
+	 * @var         string $size thumbnail size. thumbnail|medium|large|full|$custom
+	 * @uses        has_post_thumbnail()
+	 * @uses        the_post_thumbnail
+	 * @param       string $size the post thumbnail size.
+	 * @since       2.2.4.1
+   * @return      void
+	 */
+	function storemsav_post_thumbnail( $size = 'full' ) {
+
+	  if ( has_post_thumbnail() && is_single() ) {
+	    // Display post thumbnail without a post link
+			the_post_thumbnail( $size );
+		} elseif ( has_post_thumbnail() ) {
+	    printf( '<a href="%s" rel="bookmark">', esc_url(get_permalink()) );
+	    the_post_thumbnail( $size );
+	    echo '</a>';
+    }
+
+		// storemsav_post_thumbnail
+	}
+}

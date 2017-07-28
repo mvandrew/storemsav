@@ -33,6 +33,7 @@ if ( !function_exists('storemsav_remove_parent_hooks') ) {
 	/**
 	 * Remove parent hooks
 	 *
+	 * @uses        remove_action()
 	 * @since       2.2.4.1
 	 *
 	 * @return      void
@@ -54,9 +55,11 @@ if ( !function_exists('storemsav_remove_parent_hooks') ) {
 		 * Post hooks
 		 *
 		 * @see storefront_post_meta()
+		 * @see storefront_post_thumbnail()
 		 */
-		remove_action( 'storefront_loop_post',          'storefront_post_meta',             20 );
-		remove_action( 'storefront_single_post',        'storefront_post_meta',             20 );
+		remove_action( 'storefront_loop_post',              'storefront_post_meta',             20 );
+		remove_action( 'storefront_single_post',            'storefront_post_meta',             20 );
+		remove_action( 'storefront_post_content_before',    'storefront_post_thumbnail',        10 );
 
 
 		/**
@@ -65,8 +68,8 @@ if ( !function_exists('storemsav_remove_parent_hooks') ) {
 		 * @see storefront_homepage_content()
 		 * @see storefront_product_categories()
 		 */
-		remove_action( 'homepage',                      'storefront_homepage_content',      10 );
-		remove_action( 'homepage',                      'storefront_product_categories',    20 );
+		remove_action( 'homepage',                          'storefront_homepage_content',      10 );
+		remove_action( 'homepage',                          'storefront_product_categories',    20 );
 
 		// storemsav_remove_parent_hooks
 	}

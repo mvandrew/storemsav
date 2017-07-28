@@ -51,9 +51,11 @@ add_action( 'the_author_posts_link',                    'storemsav_the_author_po
  * Posts
  *
  * @see storemsav_post_meta()
+ * @see storemsav_post_thumbnail()
  */
 add_action( 'storefront_loop_post',                     'storemsav_post_meta',                          35 );
 add_action( 'storefront_single_post',                   'storemsav_post_meta',                          35 );
+add_action( 'storefront_post_content_before',           'storemsav_post_thumbnail',                     10 );
 
 
 /**
