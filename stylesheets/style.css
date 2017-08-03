@@ -701,6 +701,19 @@
     padding: 0;
   }
 }
+/* line 3, ../sass/theme/base/_base.scss */
+body,
+button,
+input,
+textarea {
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 10, ../sass/theme/base/_base.scss */
+select {
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
 /* line 6, ../sass/theme/elements/_header.scss */
 .site-branding .site-title {
   font-size: 1.8em;

@@ -53,7 +53,8 @@ if ( !function_exists('storemsav_enqueue_scripts') ) {
 		$google_fonts = apply_filters(
 			'storemsav_google_font_families',
 			array(
-				'source-sans-pro' => 'Source+Sans+Pro:300,300i,400,400i,600,700,900',
+				//'source-sans-pro' => 'Source+Sans+Pro:300,300i,400,400i,600,700,900',
+				'open-sans' => 'Open+Sans:300,300i,400,400i,600,700',
 				)
 		);
 
