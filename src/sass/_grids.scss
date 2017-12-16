@@ -1,10 +1,10 @@
 // Requirements
 //
-// USING: theme/utils/_variables
+// !!! Deprecated: USING: theme/utils/_variables
 //
 // ============
 
-@import "susy";
+@import "../vendor/susy/sass/susy";
 
 $susy: (
   columns: 12,

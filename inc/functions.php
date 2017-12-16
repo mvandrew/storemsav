@@ -39,9 +39,21 @@ if ( !function_exists('storemsav_enqueue_scripts') ) {
 		 */
 		wp_enqueue_style(
 			'storemsav-style',
-			_STM_STYLESHEETS . '/style.css',
+			_STM_STYLESHEETS . '/style.min.css',
 			array('storefront-style'),
 			_STM_VERSION
+		);
+
+
+		/**
+		 * Javascripts
+		 */
+		wp_enqueue_script(
+			'storemsav-script',
+			_STM_JAVASCRIPTS . '/script.min.js',
+			array('jquery'),
+			_STM_VERSION,
+			true
 		);
 
 

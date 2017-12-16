@@ -1,0 +1,41 @@
+{
+  "name": "storemsav",
+  "description": "Store MSAV is a child Storefront WordPress theme for creating an e-Commerce site. Store MSAV WordPress theme contains some additional features to simplify the addition of analytical systems, such as Google Analytics, Yandex Metrika, Facebook-pixel, Mail.ru counter and others.",
+  "main": "index.js",
+  "authors": [
+    "Andrey Mishchenko"
+  ],
+  "license": "GPL-2.0",
+  "keywords": [
+    "wordpress",
+    "wordpress-theme",
+    "wordpress-child-theme",
+    "woocommerce",
+    "woocommerce-theme",
+    "ecommerce",
+    "e-commerce",
+    "storefront",
+    "php",
+    "scss",
+    "bourbon",
+    "storefront-theme",
+    "yandex-metrika",
+    "google-analytics",
+    "store-msav",
+    "sass",
+    "ecommerce-site",
+    "facebook-pixel"
+  ],
+  "homepage": "https://github.com/mvandrew/storemsav",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "2"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "storemsav",
+  "version": "1.1.5",
+  "description": "Store MSAV is a child Storefront WordPress theme for creating an e-Commerce site. Store MSAV WordPress theme contains some additional features to simplify the addition of analytical systems, such as Google Analytics, Yandex Metrika, Facebook-pixel, Mail.ru counter and others.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvandrew/storemsav.git"
+  },
+  "keywords": [
+    "wordpress, wordpress-theme, wordpress-child-theme, woocommerce, woocommerce-theme, ecommerce, e-commerce, storefront, php, scss, bourbon, storefront-theme, yandex-metrika, google-analytics, store-msav, sass, ecommerce-site, facebook-pixel"
+  ],
+  "author": "Andrey Mishchenko",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mvandrew/storemsav/issues"
+  },
+  "homepage": "https://github.com/mvandrew/storemsav#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-coffee": "^2.3.5",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.0.0",
+    "run-sequence": "^2.2.0"
+  }
+}
