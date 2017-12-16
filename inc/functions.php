@@ -39,9 +39,21 @@ if ( !function_exists('storemsav_enqueue_scripts') ) {
 		 */
 		wp_enqueue_style(
 			'storemsav-style',
-			_STM_STYLESHEETS . '/style.css',
+			_STM_STYLESHEETS . '/style.min.css',
 			array('storefront-style'),
 			_STM_VERSION
+		);
+
+
+		/**
+		 * Javascripts
+		 */
+		wp_enqueue_script(
+			'storemsav-script',
+			_STM_JAVASCRIPTS . '/script.min.js',
+			array('jquery'),
+			_STM_VERSION,
+			true
 		);
 
 
@@ -53,7 +65,8 @@ if ( !function_exists('storemsav_enqueue_scripts') ) {
 		$google_fonts = apply_filters(
 			'storemsav_google_font_families',
 			array(
-				'source-sans-pro' => 'Source+Sans+Pro:300,300i,400,400i,600,700,900',
+				//'source-sans-pro' => 'Source+Sans+Pro:300,300i,400,400i,600,700,900',
+				'open-sans' => 'Open+Sans:300,300i,400,400i,600,700',
 				)
 		);
 

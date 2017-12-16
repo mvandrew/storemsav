@@ -1,8 +1,6 @@
 // Screen
 // ======
 
-@import 'bourbon/bourbon';
-
 // Vendors
 // External libraries and frameworks.
 @import "theme/vendors/modular-scale";
@@ -15,6 +13,7 @@
 // Base
 // Includes all the main Store MSAV css.
 @import "theme/base/layout";
+@import "theme/base/base";
 
 // Elements
 // Includes on page elements and sections

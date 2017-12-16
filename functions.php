@@ -38,6 +38,7 @@ define( '_STM_TEMPLATE_ELEMENTS_DIR',       _STM_CHILD_DIR . '/template-elements
 define( '_STM_PARENT_URI',                  get_template_directory_uri() );
 define( '_STM_CHILD_URI',                   get_stylesheet_directory_uri() );
 define( '_STM_STYLESHEETS',                 _STM_CHILD_URI . '/stylesheets' );
+define( '_STM_JAVASCRIPTS',                 _STM_CHILD_URI . '/javascripts' );
 
 
 // ------------------------------------------
