@@ -12,7 +12,10 @@ var gulp                = require("gulp"),
     reload              = browserSync.reload,
     del                 = require('del'),
     runSequence         = require('run-sequence'),
-    zip                 = require('gulp-zip');
+    zip                 = require('gulp-zip'),
+    stripCssComments    = require('gulp-strip-css-comments'),
+    concat              = require('gulp-concat'),
+    stripComments       = require('gulp-strip-comments');
 
 var dirs = {
     src: './src/',
@@ -98,7 +101,7 @@ gulp.task('sass', function () {
 
 
 /**
- * Coffee script compile
+ * Coffee script Compile
  */
 gulp.task('coffee', function() {
     return gulp.src( dirs.src + 'coffee/**/*.coffee' )
@@ -119,6 +122,27 @@ gulp.task('coffee', function() {
 
 
 /**
+ * Vendor JS Compile
+ */
+gulp.task('vendor-js', function () {
+    return gulp.src([
+        dirs.src + 'vendor/matchHeight/dist/jquery.matchHeight-min.js'
+    ])
+        .pipe( plumber({ errorHandler: function(err) {
+                notify.onError({
+                    title: "Gulp error in " + err.plugin,
+                    message:  err.toString()
+                })(err);
+            }}) )
+        .pipe( stripComments() )
+        .pipe( concat('vendor-js.min.js') )
+        .pipe( uglify() )
+        .pipe( gulp.dest(dirs.dist + 'javascripts/') )
+        .pipe( notify({ message: 'Vendor Javascripts task complete', onLast: true }) );
+});
+
+
+/**
  * Clear cache
  */
 gulp.task('clear', function (done) {
@@ -129,7 +153,7 @@ gulp.task('clear', function (done) {
 /**
  * Run the watch process
  */
-gulp.task('watch', ['sass', 'coffee', 'browser-sync'], function () {
+gulp.task('watch', ['vendor-js', 'sass', 'coffee', 'browser-sync'], function () {
 
     gulp.watch( dirs.src + 'sass/**/*.scss', ['sass'] );
     gulp.watch( dirs.src + 'coffee/**/*.coffee', ['coffee'] );

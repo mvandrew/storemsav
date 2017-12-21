@@ -49,9 +49,16 @@ if ( !function_exists('storemsav_enqueue_scripts') ) {
 		 * Javascripts
 		 */
 		wp_enqueue_script(
+			'storemsav-vendor',
+			_STM_JAVASCRIPTS . '/vendor-js.min.js',
+			array('jquery'),
+			_STM_VERSION,
+			true
+		);
+		wp_enqueue_script(
 			'storemsav-script',
 			_STM_JAVASCRIPTS . '/script.min.js',
-			array('jquery'),
+			array('jquery', 'storemsav-vendor'),
 			_STM_VERSION,
 			true
 		);

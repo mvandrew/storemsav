@@ -740,44 +740,6 @@ select {
     padding: 0;
   }
 }
-<<<<<<< HEAD
-/* line 3, ../sass/theme/base/_base.scss */
-body,
-button,
-input,
-textarea {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-/* line 10, ../sass/theme/base/_base.scss */
-select {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-/* line 6, ../sass/theme/elements/_header.scss */
-.site-branding .site-title {
-  font-size: 1.8em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-/* line 10, ../sass/theme/elements/_header.scss */
-.site-branding .site-title a {
-  font-weight: 300;
-}
-
-/* line 5, ../sass/theme/elements/_footer.scss */
-.footer-credit {
-  margin-top: 1em;
-  font-size: 0.875em;
-}
-
-/* line 11, ../sass/theme/elements/_footer.scss */
-.site-info {
-  padding-top: 0;
-  margin-top: 1em;
-}
-=======
->>>>>>> origin/dev2
 
 @media (max-width: 66.49894em) {
   .col-full {
