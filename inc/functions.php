@@ -64,6 +64,10 @@ if ( !function_exists('storemsav_enqueue_scripts') ) {
 		);
 
 
+		// Disable sticky payment summary
+		wp_dequeue_script( 'storefront-sticky-payment' );
+
+
 		/**
 		 * Fonts
 		 */
