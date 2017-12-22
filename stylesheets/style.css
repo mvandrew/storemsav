@@ -52,6 +52,28 @@ select {
   margin-top: 1em;
 }
 
+.site-header-cart .widget_shopping_cart,
+.main-navigation ul.menu ul.sub-menu,
+.main-navigation ul.nav-menu ul.children {
+  background-color: #555555;
+}
+
+.site-header-cart .widget_shopping_cart p.total,
+.main-navigation ul.menu ul.sub-menu p.total,
+.main-navigation ul.nav-menu ul.children p.total {
+  background-color: #333333;
+}
+
+.site-header-cart .widget_shopping_cart p.buttons,
+.main-navigation ul.menu ul.sub-menu p.buttons,
+.main-navigation ul.nav-menu ul.children p.buttons {
+  background-color: #bfbfbf;
+}
+
+.page-template-template-homepage .entry-header h1 {
+  font-size: 2.2em;
+}
+
 @media (min-width: 768px) {
   table.shop_table_responsive tbody tr td,
   table.shop_table_responsive tbody tr th {
