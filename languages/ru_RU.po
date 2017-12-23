@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: StoreMSAV\n"
-"POT-Creation-Date: 2017-07-26 10:05+0300\n"
-"PO-Revision-Date: 2017-07-26 10:06+0300\n"
+"POT-Creation-Date: 2017-12-23 15:15+0300\n"
+"PO-Revision-Date: 2017-12-23 15:16+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 2.0.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
@@ -21,99 +21,106 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#: build/storemsav/inc/classes/class-storemsavcounters.php:144
 #: inc/classes/class-storemsavcounters.php:144
 msgid "Counters IDs"
 msgstr "Идентификаторы счётчиков"
 
+#: build/storemsav/inc/classes/class-storemsavcounters.php:156
 #: inc/classes/class-storemsavcounters.php:156
 msgid "Yandex Metrika ID"
 msgstr "ИД Яндекс Метрики"
 
+#: build/storemsav/inc/classes/class-storemsavcounters.php:169
 #: inc/classes/class-storemsavcounters.php:169
 msgid "Yandex Webmaster ID"
 msgstr "Код Яндекс Вебмастер"
 
+#: build/storemsav/inc/classes/class-storemsavcounters.php:182
 #: inc/classes/class-storemsavcounters.php:182
 msgid "Google Analytics ID"
 msgstr "ИД Google Analytics"
 
+#: build/storemsav/inc/classes/class-storemsavcounters.php:195
 #: inc/classes/class-storemsavcounters.php:195
 msgid "Google Webmaster ID"
 msgstr "ИД Google Webmaster"
 
+#: build/storemsav/inc/classes/class-storemsavcounters.php:208
 #: inc/classes/class-storemsavcounters.php:208
 msgid "Facebook Pixel ID"
 msgstr "ИД Пикселя Facebook"
 
+#: build/storemsav/inc/classes/class-storemsavcounters.php:221
 #: inc/classes/class-storemsavcounters.php:221
 msgid "Mail.Ru Counter ID"
 msgstr "Код счётчика Mail.Ru"
 
-#: inc/customizer.php:29
+#: build/storemsav/inc/customizer.php:29 inc/customizer.php:29
 msgid "Change the Additional Options from here as you want"
 msgstr "Настройте дополнительные опции Вашего сайта"
 
-#: inc/customizer.php:31
+#: build/storemsav/inc/customizer.php:31 inc/customizer.php:31
 msgid "Additional Options"
 msgstr "Дополнительные параметры"
 
-#: inc/customizer.php:41
+#: build/storemsav/inc/customizer.php:41 inc/customizer.php:41
 msgid "Display Settings"
 msgstr "Настройка отображения"
 
-#: inc/customizer.php:54
+#: build/storemsav/inc/customizer.php:54 inc/customizer.php:54
 msgid "Hide post author"
 msgstr "Скрыть автора поста"
 
-#: inc/customizer.php:68
+#: build/storemsav/inc/customizer.php:68 inc/customizer.php:68
 msgid "Hide post date"
 msgstr "Скрыть дату публикации"
 
-#: inc/customizer.php:82
+#: build/storemsav/inc/customizer.php:82 inc/customizer.php:82
 msgid "Hide powered link"
 msgstr "Скрыть ссылку на WordPress"
 
-#: inc/customizer.php:94
+#: build/storemsav/inc/customizer.php:94 inc/customizer.php:94
 msgid "Design Site Link"
 msgstr "Разработчик сайта"
 
-#: inc/customizer.php:107
+#: build/storemsav/inc/customizer.php:107 inc/customizer.php:107
 msgid "Show design site link"
 msgstr "Показывать ссылку разработчика"
 
-#: inc/customizer.php:120
+#: build/storemsav/inc/customizer.php:120 inc/customizer.php:120
 msgid "Design site link text"
 msgstr "Текст ссылки разработчика"
 
-#: inc/customizer.php:133
+#: build/storemsav/inc/customizer.php:133 inc/customizer.php:133
 msgid "Design site link URL"
 msgstr "Ссылка на разработчика"
 
-#: inc/customizer.php:146
+#: build/storemsav/inc/customizer.php:146 inc/customizer.php:146
 msgid "Design site link alias"
 msgstr "Текст отображения ссылки"
 
-#: inc/customizer.php:158
+#: build/storemsav/inc/customizer.php:158 inc/customizer.php:158
 msgid "Copyright Info"
 msgstr "Авторские права"
 
-#: inc/customizer.php:171
+#: build/storemsav/inc/customizer.php:171 inc/customizer.php:171
 msgid "Show Copyright Info"
 msgstr "Показывать авторские права"
 
-#: inc/customizer.php:184
+#: build/storemsav/inc/customizer.php:184 inc/customizer.php:184
 msgid "Copyright Owner"
 msgstr "Владелец авторских прав"
 
-#: inc/customizer.php:197
+#: build/storemsav/inc/customizer.php:197 inc/customizer.php:197
 msgid "First Copyright Year"
 msgstr "Первый год возникновения прав"
 
-#: inc/functions.php:131
+#: build/storemsav/inc/functions.php:144 inc/functions.php:155
 msgid "Footer Full Width"
 msgstr "Подвал по ширине"
 
-#: inc/functions.php:133
+#: build/storemsav/inc/functions.php:146 inc/functions.php:157
 msgid ""
 "Widgets added to this region will appear after the footer widgets and above "
 "the copyright blocks."
@@ -121,60 +128,89 @@ msgstr ""
 "Виджеты, добавленные в этот блок, появятся после виджетов нижнего "
 "колонтитула и над блоками авторских прав."
 
-#: inc/storemsav-template-functions.php:51
+#: build/storemsav/inc/storemsav-template-functions.php:52
+#: inc/storemsav-template-functions.php:52
 #, php-format
 msgid "&copy; %1$s &mdash; <a href=\"%2$s\">%3$s</a>, All Rights Reserved."
 msgstr "&copy; %1$s &mdash; <a href=\"%2$s\">%3$s</a>, Все права защищены."
 
-#: inc/storemsav-template-functions.php:57
+#: build/storemsav/inc/storemsav-template-functions.php:58
+#: inc/storemsav-template-functions.php:58
 #, php-format
 msgid ""
 "&copy; %1$s-%2$s &mdash; <a href=\"%3$s\">%4$s</a>, All Rights Reserved."
 msgstr ""
 "&copy; %1$s-%2$s &mdash; <a href=\"%3$s\">%4$s</a>, Все права защищены."
 
-#: inc/storemsav-template-functions.php:78
+#: build/storemsav/inc/storemsav-template-functions.php:79
+#: inc/storemsav-template-functions.php:79
 #, php-format
 msgid "%1$s modified by %2$s."
 msgstr "Тему %1$s доработал %2$s."
 
 #. Author of the plugin/theme
-#: inc/storemsav-template-functions.php:82
+#: build/storemsav/inc/storemsav-template-functions.php:83
+#: inc/storemsav-template-functions.php:83
 msgid "Andrey Mishchenko"
 msgstr "Андрей Мищенко"
 
-#: inc/storemsav-template-functions.php:244
+#: build/storemsav/inc/storemsav-template-functions.php:246
+#: inc/storemsav-template-functions.php:246
 msgid "Written by"
 msgstr "Автор"
 
-#: inc/storemsav-template-functions.php:252
-#: inc/storemsav-template-functions.php:265
+#: build/storemsav/inc/storemsav-template-functions.php:254
+#: build/storemsav/inc/storemsav-template-functions.php:267
+#: inc/storemsav-template-functions.php:254
+#: inc/storemsav-template-functions.php:267
 msgid ", "
 msgstr ""
 
-#: inc/storemsav-template-functions.php:256
+#: build/storemsav/inc/storemsav-template-functions.php:258
+#: inc/storemsav-template-functions.php:258
 msgid "Posted in"
 msgstr "Категории"
 
-#: inc/storemsav-template-functions.php:269
+#: build/storemsav/inc/storemsav-template-functions.php:271
+#: inc/storemsav-template-functions.php:271
 msgid "Tagged"
 msgstr "Метки"
 
-#: inc/storemsav-template-functions.php:280
+#: build/storemsav/inc/storemsav-template-functions.php:282
+#: inc/storemsav-template-functions.php:282
 msgid "Comments"
 msgstr "Комментарии"
 
-#: inc/storemsav-template-functions.php:282
+#: build/storemsav/inc/storemsav-template-functions.php:284
+#: inc/storemsav-template-functions.php:284
 msgid "Leave a comment"
 msgstr "Оставить комментарий"
 
-#: inc/storemsav-template-functions.php:282
+#: build/storemsav/inc/storemsav-template-functions.php:284
+#: inc/storemsav-template-functions.php:284
 msgid "1 Comment"
 msgstr "1 Комментарий"
 
-#: inc/storemsav-template-functions.php:282
+#: build/storemsav/inc/storemsav-template-functions.php:284
+#: inc/storemsav-template-functions.php:284
 msgid "% Comments"
 msgstr "% Комментария(ев)"
+
+#: inc/storemsav-template-functions.php:359
+msgid "On Sale"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:374
+msgid "On Sale Products"
+msgstr ""
+
+#: inc/storemsav-template-functions.php:409
+msgid "Best Sellers"
+msgstr "Популярные товары"
+
+#: inc/storemsav-template-functions.php:424
+msgid "Best Selling Products"
+msgstr "Лидеры продаж"
 
 #. Theme Name of the plugin/theme
 msgid "StoreMSAV"

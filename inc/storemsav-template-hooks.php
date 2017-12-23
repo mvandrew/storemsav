@@ -61,8 +61,12 @@ add_action( 'storefront_post_content_before',           'storemsav_post_thumbnai
 /**
  * Homepage
  *
- * @see  storefront_product_categories()
- * @see  storefront_homepage_content()
+ * @see storemsav_on_sale_products()
+ * @see storemsav_best_selling_products()
+ * @see storemsav_product_categories()
+ * @see storefront_homepage_content()
  */
-add_action( 'homepage',                                 'storefront_product_categories',                80 );
+add_action( 'homepage',                                 'storemsav_on_sale_products',                   60 );
+add_action( 'homepage',                                 'storemsav_best_selling_products',              70 );
+add_action( 'homepage',                                 'storemsav_product_categories',                 80 );
 add_action( 'homepage',                                 'storefront_homepage_content',                  90 );
