@@ -1,10 +1,10 @@
-/*
+/*!
 Theme Name:   	StoreMSAV
 Theme URI:    	https://github.com/mvandrew/storemsav
 Author:         Andrey Mishchenko
 Author URI:     http://www.msav.ru/
 Description:  	Store MSAV is a child Storefront WordPress theme for creating an e-Commerce site. Store MSAV WordPress theme contains some additional features to simplify the addition of analytical systems, such as Google Analytics, Yandex Metrika, Facebook-pixel, Mail.ru counter and others.
-Version:      	1.1.5
+Version:      	1.2.1
 Template:       storefront
 License:      	GNU General Public License v2 or later
 License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
@@ -31,5 +31,76 @@ You can read more about the calculator we use in our sass here; https://github.c
 
 FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
 Images License: GNU General Public License v2 or later
-
 */
+
+body,
+button,
+input,
+textarea {
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+select {
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.site-branding .site-title {
+  font-size: 1.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.site-branding .site-title a {
+  font-weight: 300;
+}
+
+.footer-credit {
+  margin-top: 1em;
+  font-size: 0.875em;
+}
+
+.site-info {
+  padding-top: 0;
+  margin-top: 1em;
+}
+
+.footer-widget-full-width {
+  display: block;
+}
+
+.footer-widget-full-width:before,
+.footer-widget-full-width:after {
+  content: "";
+  display: table;
+}
+
+.footer-widget-full-width:after {
+  clear: both;
+}
+
+.footer-widget-full-width > .widget {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.site-header-cart .widget_shopping_cart,
+.main-navigation ul.menu ul.sub-menu,
+.main-navigation ul.nav-menu ul.children {
+  background-color: #555555 !important;
+}
+
+.site-header-cart .widget_shopping_cart p.total,
+.main-navigation ul.menu ul.sub-menu p.total,
+.main-navigation ul.nav-menu ul.children p.total {
+  background-color: #333333;
+}
+
+.site-header-cart .widget_shopping_cart p.buttons,
+.main-navigation ul.menu ul.sub-menu p.buttons,
+.main-navigation ul.nav-menu ul.children p.buttons {
+  background-color: #bfbfbf;
+}
+
+.page-template-template-homepage .entry-header h1 {
+  font-size: 2.2em;
+}

@@ -1,29 +1,32 @@
-var gulp                = require("gulp"),
-    plumber             = require('gulp-plumber'),
-    notify              = require('gulp-notify'),
-    cssnano             = require("gulp-cssnano"),
-    sass                = require("gulp-sass"),
-    autoprefixer        = require("gulp-autoprefixer"),
-    gcmq                = require('gulp-group-css-media-queries'),
-    rename              = require('gulp-rename'),
-    uglify              = require('gulp-uglify'),
-    coffee              = require('gulp-coffee'),
-    browserSync         = require('browser-sync'),
-    reload              = browserSync.reload,
-    del                 = require('del'),
-    runSequence         = require('run-sequence'),
-    zip                 = require('gulp-zip'),
-    stripCssComments    = require('gulp-strip-css-comments'),
-    concat              = require('gulp-concat'),
-    stripComments       = require('gulp-strip-comments');
+const gulp                  = require("gulp");
+const plumber               = require('gulp-plumber');
+const notify                = require('gulp-notify');
+const cssnano               = require("gulp-cssnano");
+const sass                  = require("gulp-sass");
+const autoprefixer          = require("gulp-autoprefixer");
+const gcmq                  = require('gulp-group-css-media-queries');
+const rename                = require('gulp-rename');
+const uglify                = require('gulp-uglify');
+const coffee                = require('gulp-coffee');
+const browserSync           = require('browser-sync');
+const reload                = browserSync.reload;
+const del                   = require('del');
+const runSequence           = require('run-sequence');
+const zip                   = require('gulp-zip');
+const stripCssComments      = require('gulp-strip-css-comments');
+const concat                = require('gulp-concat');
+const stripComments         = require('gulp-strip-comments');
+const fs                    = require('fs');
+const replace               = require('gulp-replace');
+const babel                 = require('gulp-babel');
 
-var dirs = {
+const dirs = {
     src: './src/',
     dist: './',
     build: './build/'
 };
 
-var build_files = [
+const build_files = [
     '**',
     '!build',
     '!build/**',
@@ -54,10 +57,32 @@ var build_files = [
 
 
 /**
+ * ===================================================================
+ *
+ * COMMON FUNCTIONS
+ *
+ * ===================================================================
+ */
+
+function gulpGetJSONData() {
+    return JSON.parse(fs.readFileSync("./package.json"));
+}
+
+function gulpGetPackageVersion() {
+    return gulpGetJSONData().version;
+}
+
+function gulpGetPackageName() {
+    return gulpGetJSONData().name;
+}
+
+
+
+/**
  * Browser Sync Start
  */
 gulp.task('browser-sync', function () {
-    var workFiles           = [
+    const workFiles           = [
         dirs.dist + '**/*.php',
         dirs.dist + 'css/**/*.css',
         dirs.dist + 'js/**/*.js',
@@ -88,13 +113,14 @@ gulp.task('sass', function () {
                     message:  err.toString()
                 })(err);
             }}) )
+        .pipe( replace('##version##', gulpGetPackageVersion()) )
         .pipe( sass() )
         .pipe( autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }) )
         .pipe( gcmq() )
-        .pipe( gulp.dest(dirs.dist + 'stylesheets/') )
-        .pipe( cssnano() )
-        .pipe( rename({suffix: '.min'}) )
-        .pipe( gulp.dest(dirs.dist + 'stylesheets/') )
+        .pipe( gulp.dest( dirs.dist ) )
+        //.pipe( cssnano() )
+        //.pipe( rename({suffix: '.min'}) )
+        //.pipe( gulp.dest(dirs.dist + 'stylesheets/') )
         .pipe( reload({stream:true}) )
         .pipe( notify({ message: 'Styles task complete', onLast: true }) );
 });
@@ -102,6 +128,8 @@ gulp.task('sass', function () {
 
 /**
  * Coffee script Compile
+ *
+ * DEPRECATED!!!
  */
 gulp.task('coffee', function() {
     return gulp.src( dirs.src + 'coffee/**/*.coffee' )
@@ -117,7 +145,25 @@ gulp.task('coffee', function() {
         .pipe( rename({suffix: '.min'}) )
         .pipe( gulp.dest(dirs.dist + 'javascripts/') )
         .pipe( reload({stream:true}) )
-        .pipe( notify({ message: 'Javascript task complete', onLast: true }) );
+        .pipe( notify({ message: 'CoffeeScript task complete', onLast: true }) );
+});
+
+
+/**
+ * JavaScript compile
+ */
+gulp.task('javascript', function() {
+    return gulp.src( dirs.src + 'javascripts/**/*.js' )
+        .pipe( plumber({ errorHandler: function(err) {
+                notify.onError({
+                    title: "Gulp error in " + err.plugin,
+                    message:  err.toString()
+                })(err);
+            }}) )
+        .pipe( babel() )
+        .pipe( gulp.dest(dirs.dist + 'javascripts/') )
+        .pipe( reload({stream:true}) )
+        .pipe( notify({ message: 'JavaScript (ECMAScript) task complete', onLast: true }) );
 });
 
 
@@ -135,10 +181,8 @@ gulp.task('vendor-js', function () {
                 })(err);
             }}) )
         .pipe( stripComments() )
-        .pipe( concat('vendor-js.min.js') )
-        .pipe( uglify() )
-        .pipe( gulp.dest(dirs.dist + 'javascripts/') )
-        .pipe( notify({ message: 'Vendor Javascripts task complete', onLast: true }) );
+        .pipe( concat('vendor.js') )
+        .pipe( gulp.dest(dirs.dist + 'javascripts/') );
 });
 
 
@@ -153,10 +197,10 @@ gulp.task('clear', function (done) {
 /**
  * Run the watch process
  */
-gulp.task('watch', ['vendor-js', 'sass', 'coffee', 'browser-sync'], function () {
+gulp.task('watch', ['vendor-js', 'sass', 'javascript', 'browser-sync'], function () {
 
     gulp.watch( dirs.src + 'sass/**/*.scss', ['sass'] );
-    gulp.watch( dirs.src + 'coffee/**/*.coffee', ['coffee'] );
+    gulp.watch( dirs.src + 'javascripts/**/*.js', ['javascript'] );
 
 });
 gulp.task("default", ["watch"]);
@@ -183,11 +227,11 @@ gulp.task( 'build-copy', function() {
  * Zip the current release
  */
 gulp.task( 'build-zip', function () {
-    // Получение данных из файла пакета
-    var fs = require('fs');
-    var json = JSON.parse(fs.readFileSync("./package.json"));
-
-    var packageName = json.name + '.' + json.version;
+    /**
+     * Set the package name
+     * @type {string}
+     */
+    const packageName = gulpGetPackageName() + '.' + gulpGetPackageVersion();
 
     return gulp.src( dirs.build + '/storemsav/**' )
         .pipe( zip(packageName + '.zip') )

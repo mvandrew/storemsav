@@ -1,3 +1,4 @@
+# !!!DEPRECATED!!!
 (($) ->
 
   $(document).ready ->
