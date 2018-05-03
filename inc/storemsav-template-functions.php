@@ -501,3 +501,34 @@ if ( ! function_exists( 'storemsav_product_categories' ) ) {
 		}
 	} // storemsav_product_categories
 }
+
+
+if ( !function_exists('storemsav_recent_products_args') ) {
+	/**
+     * Setting the display parameters of the recent products section.
+     *
+	 * @param $args
+	 *
+	 * @return array
+	 */
+    function storemsav_recent_products_args($args): array {
+        $args['limit'] = 8;
+        return $args;
+    } // storemsav_recent_products_args
+}
+
+
+if ( !function_exists('storemsav_featured_products_args') ) {
+	/**
+     * Setting the display parameters of the featured products section.
+     *
+	 * @param $args
+	 *
+	 * @return array
+	 */
+    function storemsav_featured_products_args($args): array {
+	    $args['limit'] = 24;
+	    $args['orderby'] = 'modified';
+	    return $args;
+    } // storemsav_featured_products_args
+}

@@ -84,7 +84,7 @@ function gulpGetPackageName() {
 gulp.task('browser-sync', function () {
     const workFiles           = [
         dirs.dist + '**/*.php',
-        dirs.dist + 'css/**/*.css',
+        dirs.dist + '**/*.css',
         dirs.dist + 'js/**/*.js',
         dirs.dist + 'img/**/*.+(jpeg|jpg|gif|png|svg)',
 

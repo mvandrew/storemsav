@@ -44,14 +44,29 @@ select {
   font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-.site-branding .site-title {
+header.site-header {
+  background-color: #333333;
+}
+
+header.site-header .site-branding .site-title {
   font-size: 1.8em;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.site-branding .site-title a {
+header.site-header .site-branding .site-title a {
   font-weight: 300;
+}
+
+header.site-header ul.menu li.menu-item a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+header.site-header ul.menu li.menu-item a:hover,
+header.site-header ul.menu li.menu-item a:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
 }
 
 .footer-credit {

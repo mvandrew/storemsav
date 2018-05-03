@@ -3,14 +3,31 @@
 //
 // Header Style
 //
+header.site-header {
+  background-color: #333333;
 
-.site-branding {
-  .site-title {
-    font-size: 1.8em;
-    font-weight: 300;
-    text-transform: uppercase;
-    a {
+  .site-branding {
+    .site-title {
+      font-size: 1.8em;
       font-weight: 300;
+      text-transform: uppercase;
+      a {
+        font-weight: 300;
+      }
+    }
+  }
+
+  ul.menu {
+    li.menu-item {
+      a {
+        background-color: transparent;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          background-color: rgba(0, 0, 0, 0.5);
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
