@@ -17,6 +17,13 @@ header.site-header {
     }
   }
 
+  .storefront-primary-navigation {
+    > .col-full {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   ul.menu {
     li.menu-item {
       a {

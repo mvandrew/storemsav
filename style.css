@@ -58,6 +58,11 @@ header.site-header .site-branding .site-title a {
   font-weight: 300;
 }
 
+header.site-header .storefront-primary-navigation > .col-full {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 header.site-header ul.menu li.menu-item a {
   background-color: transparent;
   text-decoration: none;
