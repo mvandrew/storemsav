@@ -235,7 +235,7 @@ gulp.task( 'build-zip', function () {
 
     return gulp.src( dirs.build + '/storemsav/**' )
         .pipe( zip(packageName + '.zip') )
-        .pipe( gulp.dest(dirs.build + '/dest') );
+        .pipe( gulp.dest(dirs.build + '/dist') );
 });
 
 
