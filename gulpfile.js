@@ -231,7 +231,7 @@ gulp.task( 'build-zip', function () {
      * Set the package name
      * @type {string}
      */
-    const packageName = gulpGetPackageName() + '.' + gulpGetPackageVersion();
+    const packageName = gulpGetPackageName(); // + '.' + gulpGetPackageVersion();
 
     return gulp.src( dirs.build + '/storemsav/**' )
         .pipe( zip(packageName + '.zip') )

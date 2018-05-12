@@ -1,6 +1,6 @@
 {
   "name": "storemsav",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Store MSAV is a child Storefront WordPress theme for creating an e-Commerce site. Store MSAV WordPress theme contains some additional features to simplify the addition of analytical systems, such as Google Analytics, Yandex Metrika, Facebook-pixel, Mail.ru counter and others.",
   "main": "index.js",
   "scripts": {
